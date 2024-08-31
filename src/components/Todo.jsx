@@ -3,15 +3,12 @@ import Form from './Form'
 import Todolist from './Todolist'
 
 
-function Todo() {
+export default function Todo() {
   const [todos,setTodos] =useState([])
 
-  return (
-    <div>
-      <Form todo={todos} setTodos={setTodos} />
+  return <div>
+      <Form todos={todos} setTodos={setTodos} />
       <Todolist todos={todos}/>
     </div>
-  )
+  
 }
-
-export default Todo
